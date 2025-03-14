@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
         moto.abrirPorta();
         moto.fecharPorta();
 
-        carro.toString();
-        moto.toString();
+        Log.d("CarroInfo", carro.toString());
+        Log.d("MotoInfo", moto.toString());
 
     }
 }

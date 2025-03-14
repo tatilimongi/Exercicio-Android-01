@@ -11,14 +11,15 @@ public class Carro extends Veiculo {
     @Override
     public String toString() {
         return "Carro{" +
-                "aberto=" + aberto +
-                ", placa='" + placa + '\'' +
-                ", marca='" + marca + '\'' +
-                ", modelo='" + modelo + '\'' +
-                ", ano=" + ano +
-                ", status=" + status +
+                "aberto=" + isAberto() +
+                ", placa='" + getPlaca() + '\'' +
+                ", marca='" + getMarca() + '\'' +
+                ", modelo='" + getModelo() + '\'' +
+                ", ano=" + getAno() +
+                ", status=" + isStatus() +
                 '}';
     }
+
 
     @Override
     public void ligar() {
