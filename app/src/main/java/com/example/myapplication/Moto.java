@@ -22,6 +22,7 @@ public class Moto extends Veiculo {
         if(status){
             Log.i("MotoLigarErro", "Moto já está ligada");
         }else{
+            status = true;
             Log.i("MotoLigar", "Moto ligada");
         }
     }
@@ -30,6 +31,7 @@ public class Moto extends Veiculo {
         if (!status) {
             Log.i("MotoDesligarErro", "Moto já está desligada");
         } else {
+            status = false;
             Log.i("MotoDesligar", "Moto desligada");
         }
     }
