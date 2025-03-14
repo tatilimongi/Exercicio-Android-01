@@ -1,7 +1,6 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
-import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,19 +21,26 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        Gerente gerente = new Gerente("Cleitinho", 8000.00, "TI");
-        Desenvolvedor desenvolvedor = new Desenvolvedor("Cleide", 5000.00, "Java");
+        Carro carro = new Carro("GTA-3498","Toyota", "Corolla", 2022, false, false);
+        Moto moto = new Moto("MPO-6512", "Honda", "CBR", 2023, true, false);
 
-        gerente.realizarTarefa();
-        desenvolvedor.realizarTarefa();
+        carro.acelerar();
+        carro.frear();
+        moto.acelerar();
+        moto.frear();
 
-        gerente.definirMeta();
-        desenvolvedor.escreverCodigo();
+        carro.ligar();
+        carro.desligar();
+        moto.ligar();
+        moto.desligar();
 
-        String resultado = gerente.getNome() + " recebe um salário de R$ " + gerente.calcularSalario() + "\n" +
-                desenvolvedor.getNome() + " recebe um salário de R$ " + desenvolvedor.calcularSalario();
+        carro.abrirPorta();
+        carro.fecharPorta();
+        moto.abrirPorta();
+        moto.fecharPorta();
 
-        TextView textView = findViewById(R.id.textView);
-        textView.setText(resultado);
+        carro.toString();
+        moto.toString();
+
     }
 }
